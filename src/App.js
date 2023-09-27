@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Item from "./pages/Items"
+import Navbar from "./components/Navbar";
 function App() {
   // const routs = createRoutesFromElements(
   //   <>
@@ -14,10 +15,15 @@ function App() {
   // const router = createBrowserRouter(routs);
 
   const router = createBrowserRouter([
-    { path: "/", element: <Home /> },
-    { path: "/about", element: <About /> },
-    { path: "/items", element: <Item /> },
-
+    {
+      path: "/",
+      element: <Navbar />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: "/about", element: <About /> },
+        { path: "/items", element: <Item /> },
+      ],
+    },
   ]);
 
   return <>
