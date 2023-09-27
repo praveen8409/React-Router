@@ -2,9 +2,9 @@ function Navbar({setPage}) {
   return (
     <>
       <div className="nav">
-          <h4 onClick={()=> setPage('home')}>HOME</h4>
-          <h4 onClick={()=> setPage('about')}>ABOUT</h4>
-          <h4 onClick={()=> setPage('item')}>ITEMS</h4>
+          <h4>HOME</h4>
+          <h4>ABOUT</h4>
+          <h4>ITEMS</h4>
       </div>
     </>
   );
