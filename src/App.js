@@ -3,6 +3,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Item from "./pages/Items"
 import Navbar from "./components/Navbar";
+import ItemsDetails from "./pages/ItemsDetails";
 function App() {
   // const routs = createRoutesFromElements(
   //   <>
@@ -22,6 +23,10 @@ function App() {
         { index: true, element: <Home /> },
         { path: "about", element: <About /> },
         { path: "items", element: <Item /> },
+        {
+          path: 'items/:itemId',
+          element: <ItemsDetails/>,
+        }
       ],
     },
   ]);

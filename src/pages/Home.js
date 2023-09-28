@@ -4,7 +4,7 @@ function Home() {
     <>
       <main>
         <h1>Home Page</h1>
-        <Link to='/items' >Item</Link>
+        
       </main>
     </>
   );
