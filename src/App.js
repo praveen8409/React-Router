@@ -22,10 +22,17 @@ function App() {
       children: [
         { index: true, element: <Home /> },
         { path: "about", element: <About /> },
-        { path: "items", element: <Item /> },
+        
         {
-          path: 'items/:itemId',
-          element: <ItemsDetails/>,
+          path: 'items',
+          
+          children:[
+            {index: true, element:<Item/>},
+            {
+              path: ':id',
+              element: <ItemsDetails />
+            }
+          ]
         }
       ],
     },
