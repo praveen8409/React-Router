@@ -20,8 +20,8 @@ function App() {
       element: <Navbar />,
       children: [
         { index: true, element: <Home /> },
-        { path: "/about", element: <About /> },
-        { path: "/items", element: <Item /> },
+        { path: "about", element: <About /> },
+        { path: "items", element: <Item /> },
       ],
     },
   ]);

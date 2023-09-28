@@ -8,11 +8,11 @@ function Navbar({ setPage }) {
           <h4>HOME</h4>
         </NavLink>
 
-        <NavLink style={({isActive}) => ( isActive ? {color: "blue"}: undefined)} to='/about'>
+        <NavLink style={({isActive}) => ( isActive ? {color: "blue"}: undefined)} to='about'>
           <h4>ABOUT</h4>
         </NavLink>
 
-        <NavLink style={({isActive}) => ( isActive ? {color: "blue"}: undefined)} to='/items'>
+        <NavLink style={({isActive}) => ( isActive ? {color: "blue"}: undefined)} to='items'>
           <h4>ITEMS</h4>
         </NavLink>
 
