@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Item from "./pages/Items"
 import Navbar from "./components/Navbar";
 import ItemsDetails from "./pages/ItemsDetails";
+import ErrorPage from "./pages/ErrorPage";
 function App() {
   // const routs = createRoutesFromElements(
   //   <>
@@ -19,6 +20,7 @@ function App() {
     {
       path: "/",
       element: <Navbar />,
+      errorElement: <ErrorPage />,
       children: [
         { index: true, element: <Home /> },
         { path: "about", element: <About /> },
